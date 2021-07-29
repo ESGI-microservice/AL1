@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/contentModel.xml
+/projectSettingsUpdater.xml
+/.idea.03.Builder.iml
+# Datasource local storage ignored files
+/../../../../../../../../../../../:\Users\Latif\RiderProjects\AL1\02-builder\exercice\init\.idea\.idea.03.Builder.dir\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
