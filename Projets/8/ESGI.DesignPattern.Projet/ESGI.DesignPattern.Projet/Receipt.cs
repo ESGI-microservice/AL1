@@ -10,6 +10,13 @@ namespace ESGI.DesignPattern.Projet
         public Money Tax { get; set; }
         public Money Total { get; set; }
 
+        public Receipt(Money amount, Money tax, Money total)
+        {
+            this.Amount = amount;
+            this.Tax = tax;
+            this.Total = total;
+        }
+
         public IEnumerable<string> Format()
         {
             return new List<string>() { //

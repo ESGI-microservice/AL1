@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using System.Runtime.Serialization;
 
 namespace ESGI.DesignPattern.Projet
 {
-    public class Money
+    public class Money : INullable
     {
         private readonly decimal value;
 
@@ -31,5 +32,7 @@ namespace ESGI.DesignPattern.Projet
         {
             return value;
         }
+
+        public bool IsNull { get; }
     }
 }
