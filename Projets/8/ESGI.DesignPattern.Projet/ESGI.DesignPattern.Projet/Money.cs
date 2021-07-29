@@ -7,30 +7,30 @@ namespace ESGI.DesignPattern.Projet
 {
     public class Money : INullable
     {
-        private readonly decimal value;
+        private readonly decimal _value;
 
-        public Money(int value) => this.value = value;
+        public Money(int value) => this._value = value;
 
-        public Money(decimal value) => this.value = value;
+        public Money(decimal value) => this._value = value;
 
         public Money Add(Money other)
         {
-            return new Money(value + other.value);
+            return new Money(_value + other._value);
         }
 
         public Money Percentage(int p)
         {
-            return new Money(value * p / 100);
+            return new Money(_value * p / 100);
         }
 
         public string Format()
         {
-            return string.Format("{0:0.00}", value);
+            return string.Format("{0:0.00}", _value);
         }
 
         internal decimal AsDecimal()
         {
-            return value;
+            return _value;
         }
 
         public bool IsNull { get; }
